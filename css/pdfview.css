@@ -1,0 +1,9 @@
+/*------------------Pour incerer la vus d'un pdf---------------------*/
+
+.content  , #pdfView{
+	height : 80%;
+	width:80%;
+	float:left;
+	margin-left:10%;
+	margin-top:100px;
+}

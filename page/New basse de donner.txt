@@ -1,0 +1,154 @@
+New basse de donner 
+
+
+CREATE TABLE client (
+    email
+    nom
+    prenom
+    mdp
+    numero 
+    adresse
+    date 
+)
+
+CREATE TABLE panier
+    email
+    codeProduit
+    qte
+
+
+++ Produit
+    QTE
+
+++ 
+
+Gerer les qte 
+Back Office 
+Super Panie en OBJEct 
+
+
+
+ OK     - une authentification par connexion (mot de passe chiffré dans la base de données – md5 par exemple ou autre)
+- un back-office pour l’administrateur qui lui permettra la gestion complète du site (ajout/ supretion / modification de (produit / user / categorie produit ))
+OK  - des sessions 
+- des contrôles (champs de formulaires, sécurité des pages, etc…)
+OK  - un panier (en variable de session)
+- la création d'un fichier PDF (bon de commande, facture, ou ….)
+- utilisation de la classe PDO
+OK  - une base de données cohérente
+- .... tout bonus sera le bienvenue 
+
+-pizza 12 Moyen 
+-burger 16 au top
+-grec 7 au top
+-otacos (11) au top
+
+
+
+
+
+le truc pour les qte :
+
+- quand on as plus de stoque l'achat devient imposible
+
+
+
+
+
+
+
+
+
+
+  <div class= " icon " >
+                img 
+            </div>
+            
+            <div class = " nameCase ">
+            <a href="profilAdminProduit.php"> Produit </a>
+            </div>
+        </div>
+
+        <!-- produit acheter -->
+        <div class="optionCase">
+            
+            <div class= " informationBDD " >
+                5
+            </div>
+
+            <div class= " icon " >
+                img 
+            </div>
+            
+            <div class = " nameCase ">
+            <a href="https://www.youtube.com/"> Vente </a>
+            </div>
+        </div>
+
+        
+        <!-- Argent gagnier -->
+        <div class=" optionCase ">
+            
+            <div class= " informationBDD " >
+               6 
+            </div>
+
+            <div class = " nameCase ">
+                <a>Categorie</a>
+            </div>
+        </div>
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<?php
+//lien vers bdd
+//$bdd = new PDO('Localhost' , 'root' , '' , 'greadbottle');
+
+//session + creation tableau
+session_start();
+$_SESSION['basket'] = array();
+
+//le basket
+function AddProduct($codeProduit){
+
+    //on regarde ci le basket existe sinon on le cree
+    if(empty($_SESSION['basket'])){
+        $_SESSION['basket'] = [];
+    }
+    
+    //on va parcourire le tableau , ci il contien deja le produit on va ajouter 1 de qte , en revanche ci il ne le contient pas on le rajoute
+    foreach ($basket as $id => $qte){
+        if($codeProduit == $id){
+            //on modifie la table et ajoute +1
+            $basket = array($id => $qte + 1);
+        } 
+        //sinon on l'ajoute
+        else{
+            $_SESSION['basket'][] = new Article($codeProduit,1);
+        }
+    }
+
+    include("Panier.php");
+}
+
+function RemoveProduct($codeProduit,$basket){
+    //on va parcourire le tableau pour trouver le produit en question
+    foreach ($basket as $id => $qte){
+        if($codeProduit == $id){
+            //on modifie la table et enleve -1
+            $basket = array($id => $qte -1);
+            if($qte == 0){
+                //on supprimer de la liste le produit
+                unset($basket[$codeProduit]);
+            }
+        } 
+    }
+}
+
+?>

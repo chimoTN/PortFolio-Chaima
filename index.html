@@ -1,0 +1,179 @@
+<html>
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/header.css" /> 
+		<link type="text/css" rel="stylesheet" href="css/corpText.css" />
+		<link type="text/css" rel="stylesheet" href="css/footer.css" /> 	
+		<link type="text/css" rel="stylesheet" href="css/cv.css" /> 	
+	
+	</head>
+	
+	<body>
+	
+	
+		<!------------------------ header ---------------------------------------->
+		
+		<header>
+				<a href="index.html" class="logo">PORTFOLIO</a>
+			<ul>
+				<li><a href="index.html">A PROPOS</a></li>
+				<li><a href="page/CV.html">CV</a></li>
+				<li><a href="page/projet.html">PROJETS</a></li>
+				<li><a href="page/veille.html">VEILLE</a></li>
+				<li><a href="page/stage.html">STAGE</a></li>
+				<li><a href="page/contact.html">CONTACT</a></li>
+			</ul>
+		</header>		
+		
+		
+		<!-- permet le changement de couleur du header de transparent en noir  -->
+		
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky",window.scrollY > 0)
+		})
+		</script>
+	
+		
+	<!--------------------------- L'image du haut avec le text ---------------------------->
+
+		<div class = " imagePresentation " >
+			<div class="globalTitrePresention">
+				<div class = " grosTitreIndex " data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					CHAIMA 
+				</div>
+				</br>
+				<div class = " grosTitreIndex " data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					OUERTANI
+				</div>
+
+				<div class="grosTitreTxtImage" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					Développeur web
+				</div>
+			</div>
+		</div>
+		 
+
+		<!--------------------------- corp du site  -------------------------------->
+			
+			
+		<!-- A propos-->
+		
+		<div class = " boxCentre " >
+			
+			<div class = " titre " data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+				A propos
+			</div>
+			
+			<div class = " txt " data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="450">
+				<div class="Small_Void_Space_Viewport">
+				</div>
+				Diplômée d'un baccalauréat SN (Systèmes Numériques) option RISC (Réseaux informatiques et systèmes communicants),
+				je suis actuellement étudiante en deuxième année de BTS SIO (Services Informatiques aux Organisations) option SLAM
+				(Solutions Logicielles et Applications Métiers) au sein du Lycée polyvalent Parc des Loges à Evry.
+			</div>
+			
+		</div>
+		
+		
+		<!-- Le bts -->
+		
+		<div class = " boxImageGauche " >
+			<img src="image\logoParcDesLoges.png" height="100%" width="100%">
+		</div>
+		
+		<div class = " boxGauche " >
+			
+			<div class = " titre " data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+				LE BTS
+			</div>
+			
+			<div class = " txt " data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="450">
+				<div class="Small_Void_Space_Viewport">
+				</div>
+				Le Brevet de Technicien Supérieur spécialité Services Informatiques aux Organisations (BTS SIO)
+				s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau 
+				ou de développeur. Il est possible d'ensuite intégrer le marché du travail directement ou de continuer 
+				les études dans le domaine de l'informatique.
+			</div>
+			
+		</div>
+		
+		
+		<!-- Les options -->
+		
+		<div class="boxGlobalOption">
+			
+			<div class = "boxDetailOption" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="50">
+				<div class = " titre " >
+					SISR
+				</div>
+				</br></br>
+				<div class = " txt " >
+					La spécialisation SISR (Solutions d’Infrastructure, Système et Réseaux) forme des professionnels des réseaux et
+					équipements informatiques (installation, maintenance, sécurité).
+					</br></br>
+					Cela signifie intervenir sur la conception, la mise en place, le déploiement, la maintenance et le maintien de la
+					sécurité du système.
+				</div>
+			</div>
+			
+
+			<div class = "boxDetailOption" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="450">
+				<div class = " titre " >
+					SLAM
+				</div>
+				</br></br>
+				<div class = " txt " >
+					La spécialisation SLAM est plus orientée développement. Elle forme des professionnels au développement d’applications, 
+					(sites webs, applications mobiles, logiciels) et à la rédaction de documentations techniques liées à celles-ci.
+				</div>
+			</div>
+
+		</div>
+	
+	
+		<!-- une div vide pour cree une separation entre footer et le reste -->
+		
+		<div class = "void">
+		</DIV>
+		
+				<!-------------------------------- footer ------------------------------------------->
+		
+				<div class = "footer">
+			
+
+					<div class = "TitreFooter">
+						CHAIMA OUERTANI
+					</div>
+		
+					<div class = "informationFooter">
+						Ce site a pour but de me présenter ainsi que de présenter mon parcours scolaire et professionnel.
+					</div>
+		
+					<div class="reseauxFooter">
+		
+						<img class="logo_reseaux" src="image/github.png" width="50px" weight="50px">
+						<img class="logo_reseaux" src="image/email.png" width="50px" weight="50px">
+						<img class="logo_reseaux" src="image/linkedin.png" width="50px" weight="50px">
+		
+					</div>
+					
+					<!-- Le copyriht -->
+		
+					<div class = "txtFooter">
+						Copyright 2021 © Chaima Ouertani
+					</div>
+		
+				</div>
+	
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,404 @@
+@font-face {
+	font-family: "Pattaya";
+	src: url("../font/Pattaya/Pattaya-Regular");
+}
+
+/*-------------------La box de presentation generale qui amene au projet avec une description rapide ---------*/
+
+/*box mere*/
+.presentationProjet {
+    height: 300px;
+    width: 500px;
+	 
+    /* height : 55%;
+	width : 40%; */
+    margin-left : 10%;
+    float: left;
+    margin-top: 7%;
+    font-size: 20px;
+	transition: transform .2s;
+	z-index:1000;
+	
+}
+
+.presentationProjet :hover {
+  transform: scale(1.1); 
+}
+
+/*les id qui change on function des image*/
+
+#z1{
+	background-image : url('../image/svaccueil.PNG');
+	background-size:cover;
+}
+
+#z2{
+	background-image : url('../image/bgindex.PNG');
+	background-size:cover;
+}
+
+#z3{
+	background-image : url('../image/ihmConnexion.PNG');
+	background-size:cover;
+}
+
+#z5{
+	background-image : url('../image/gsbConnexion.PNG');
+	background-size:cover;
+}
+
+#z6{
+	background-image : url('../image/rasio.PNG');
+	background-size:cover;
+}
+
+#z4{
+	background:gray;
+	background-image : url('../image/rouage.png');
+}
+/* --------pour le truc voir + qui saffiche ----------*/
+
+.overlay  {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    left: 10;
+    display: block;
+    height: 67%;
+}
+
+.presentationProjet:hover .overlay  {
+  opacity: 1;
+}
+
+/*Pour l'interieur du overlay*/
+
+/*le titre rapide*/
+.titre{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	text-align:center;
+	z-index:1000;
+}
+
+
+/*button qui ramene au projet*/
+.boutton a{
+	border: solid 2px;
+    border-color: white;
+    color: white;
+    height: 14%;
+    width: 30%;
+    margin-left: 35%;
+    float: left;
+    margin-top: 10%;
+	padding-top:5px;
+    font-size: 20px;
+    display: block;
+    border-radius: 100px;
+    text-decoration: none;
+	transition: .5s ease;
+	z-index:1000;
+}
+
+.boutton a:hover{
+	background-color:white;
+	border: solid 3px;
+    border-color: white;
+	color: black;
+}
+
+/*---------------------------  Explication projet   ------------------------------*/
+
+/* image de persentation*/
+.imgProjet {
+	color: white;
+    height: 60%;
+    width: 40%;
+    margin-left : 5%;
+    float: left;
+    margin-top: 5%;
+	z-index:1000;
+	
+}
+
+.titrePresentationProjetCentre  , #sprojet{
+    color: white;
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+	float:left;
+    z-index: 1000;
+}
+
+.content  , #ResumerPresentationProjet{
+	margin-top:5%;
+	width: 35%;
+	height:65%;
+	float : right;
+	margin-right:5%;
+}
+
+.titrePresentationProjet{
+    color: white;
+    margin-top: 5%;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    float: right;
+}
+
+.languageUtiliserProjet{
+    color: white;
+    margin-top: 8px;
+    font-size: 135%;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+	width: 100%;
+    float: right;
+
+}
+
+.boxDroiteProjet{
+	color: white;
+    height: auto;
+	width: 100%;
+	margin-top: 20%;
+	text-align:justify;
+}
+
+/*---------------------------les image de la Phototechque ------------------------------*/
+
+.contentPhototechque{
+	width:80%;
+	height:80%;
+	float:left;
+	margin-left:10%;
+	margin-top:10%;
+}
+
+.image1 a{
+    height: 40%;
+    width: 36%;
+    float: left;
+	transition: .5s ease;
+}
+
+.image1 :hover {
+	transform: scale(1.1); 
+}
+
+
+.image2 a{
+    height: 100%;
+    width: 27%;
+    margin-left: 1%;
+    float: left;
+    transition: .5s ease;
+}
+
+.image2 :hover {
+	transform: scale(1.1); 
+}
+
+
+.image3 a{
+    height: 55%;
+    width: 35%;
+    margin-left: 1%;
+    float: left;
+    transition: .5s ease;
+}
+
+.image3 :hover {
+	transform: scale(1.1); 
+}
+
+.image4 a{
+    height: 12%;
+    width: 12%;
+    float: left;
+	margin-top:1%;
+	margin-left:1%;
+    transition: .5s ease;
+}
+
+.image4 :hover {
+	transform: scale(1.1); 
+}
+
+.image5 a{
+    height: 58%;
+    width: 36%;
+    margin-top: 19%;
+    margin-left: -100%;
+    float: left;
+    transition: .5s ease;
+}
+
+.image5 :hover {
+	transform: scale(1.1); 
+}
+
+.image6 a{
+    height: 43%;
+    width: 35%;
+    margin-left: 1%;
+    margin-top:1%;
+    float: right;
+    transition: .5s ease;
+}
+
+.image6 :hover {
+	transform: scale(1.1); 
+}
+
+.image7 a{
+    height: 18%;
+    width: 18%;
+	margin-left:1%;
+    margin-top: 1%;
+    float: left;
+    transition: .5s ease;
+}
+
+.image7 :hover {
+	transform: scale(1.1); 
+}
+
+.titre_pro{
+    background: #c20048 ;
+    width: 100%;
+    height: 23%;
+}
+
+.txt_box_pro{
+    width: 100%;
+    text-align: center;
+    font-size: 20;
+    color: white;
+    padding-top: 20px;
+}
+
+/* */
+/*======================================= RESPONSIVE =======================================*/
+
+@media screen and (max-width: 1300px){
+   
+    .presentationProjet {
+        
+        margin-left : 10%;
+        
+    }
+
+    .overlay  {
+        font-size: 30px;
+        height: 67%;
+        opacity: 1;
+    }
+
+    .titre{
+        font-size: 45px;
+    }
+
+    .boutton a{
+        font-size: 35px;
+    }
+
+    .image5{
+        margin-top: 1.6%;
+    }
+
+    .boxDroiteProjet{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1950px) {
+    .presentationProjet {
+        height: 300px;
+        width: 500;
+        margin-left : 10%;
+        float: left;
+        margin-top: 7%;
+        font-size: 20px;
+        transition: transform .2s;
+        z-index:1000;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    .presentationProjet {
+        height : 40%;
+        width : 85%;
+        margin-top: 65px;
+    }
+	
+    .overlay  {
+        font-size: 10px;
+        height: 84%;
+        opacity: 1;
+    }
+
+    .boutton a{
+        height: 15%;
+        width: 45%;
+        margin-left: 28%;
+    }
+
+    /*button qui ramene au projet*/
+    .boutton a{
+        height: 20%;
+    }
+
+    .titre {
+        margin-top: 10px;
+    }
+
+    
+
+    /* ---------------- Page du projet en question ---------------- */
+
+    .imgProjet{
+        height: 50%;
+    }
+
+    .titrePresentationProjet{
+        font-size: 107%;
+    }
+
+    .languageUtiliserProjet{
+        font-size: 100%;
+    }
+
+    .boxDroiteProjet{
+        font-size: 61%;
+    }
+
+    .contentPhototechque{
+        height: 55%;
+    }
+
+    .image5 a{
+        margin-top: 45%;
+    }
+    .image6 a{
+        margin-top:2%;
+    }
+}
