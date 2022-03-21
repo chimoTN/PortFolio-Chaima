@@ -50,12 +50,20 @@
 
 .certification img{
     width: 25%;
-    height: 25%;
+    height: 34%;
     background: wheat;
     margin-bottom: 20;
     margin-left: 5%;
     margin-top: 5%;
     float: left;
+    animation-duration: 3s;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+
+.certification img:hover{
+    
+    transform: scale(1.1); /* Équivalent à scaleX(0.7) scaleY(0.7) */
 
 }
 

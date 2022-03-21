@@ -65,7 +65,7 @@
     text-align: center;
     left: 10;
     display: block;
-    height: 88%;
+    height: auto;
 	border-radius:100%;
 }
 
@@ -79,6 +79,7 @@
 	font-weight: bold;
 	text-align:center;
 	margin-top: 30px;
+    padding-bottom: 36px;
 	z-index:1000;
 }
 
@@ -132,6 +133,33 @@
     padding-top: 10px;
     border-radius: 5px;
 }
+
+
+@media screen and (min-width: 1900px){
+   
+    .presentationProjet{
+        height: 425px;
+        width: 425px;
+    }
+
+    /*le titre rapide*/
+    .titre{
+        margin-top: 60px;
+    }
+
+    /*la description rapide*/
+    .description{
+        margin-top:15%;
+    }
+
+    /*button qui a l'article*/
+    .boutton a {
+        margin-left: 30%;
+    }
+
+
+}
+
 
 @media screen and (max-width: 1600px){
    

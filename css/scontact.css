@@ -88,13 +88,23 @@ textarea{
 }
 
 .info_contact{
-    font-size: 15;
+	font-size: 15;
     color: white;
     padding: 20;
-    margin-left: 5%;
-	margin-bottom: 5%;
+    margin-left: 19%;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
+.titre_i_c{
+	font-weight: bold;
+}
+
+.info_contact a{
+    font-size: 15;
+    color: white;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 400px){
 

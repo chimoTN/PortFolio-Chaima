@@ -327,16 +327,26 @@
 }
 
 @media screen and (max-width: 1950px) {
+    
     .presentationProjet {
         height: 300px;
         width: 500;
-        margin-left : 10%;
+        margin-left : 5%;
         float: left;
         margin-top: 7%;
         font-size: 20px;
         transition: transform .2s;
         z-index:1000;
         
+    }
+
+    .overlay  {
+        font-size: 17px;
+    }
+
+    .boutton a {
+        height: 17%;
+        margin-top: 5%;
     }
 
 
@@ -353,6 +363,7 @@
     .overlay  {
         font-size: 10px;
         height: 84%;
+        font-size: 17px;
         opacity: 1;
     }
 
@@ -361,6 +372,9 @@
         width: 45%;
         margin-left: 28%;
     }
+
+
+    
 
     /*button qui ramene au projet*/
     .boutton a{
