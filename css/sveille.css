@@ -140,11 +140,18 @@
 }
 
 
-@media screen and (min-width: 1900px){
+@media screen and (min-width: 1850px){
    
+    .conteneur_certif{
+		height: auto;
+		width: 80%;
+		padding-left: 10%;
+	}
+    
     .presentationProjet{
-        height: 425px;
-        width: 425px;
+        height: 350px;
+        width: 350px;
+        margin-left : 6%;
     }
 
     /*le titre rapide*/
@@ -159,7 +166,7 @@
 
     /*button qui a l'article*/
     .boutton a {
-        margin-left: 30%;
+        margin-left: 25%;
     }
 
 
