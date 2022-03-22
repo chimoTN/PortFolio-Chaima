@@ -8,6 +8,7 @@ body{
 	
 }
 
+
 /* -------------le slider d'image------------------*/
 .slider {
 	width: 1000;
@@ -459,16 +460,12 @@ body{
 
 /*-----------------------------RESPONSIVE----------------------------------*/
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1800px){
 	
-	.polaroidContent{
-		height: 55%;
-		width: 25%;
-	}
-
-	.polaroidContentDroite{
-		height: 55%;
-		width: 25%;
+	.conteneur_certif{
+		height: auto;
+		width: 80%;
+		padding-left: 10%;
 	}
 }
 

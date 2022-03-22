@@ -48,6 +48,11 @@
 	background-size:cover;
 }
 
+#A7{
+	background-image : url('../image/neuraLinkMortSinge.PNG');
+	background-size:cover;
+}
+
 #off{
     background-image : url('../image/rouage.png');
     background-size:cover;

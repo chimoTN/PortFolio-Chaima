@@ -50,7 +50,7 @@
 
 .certification img{
     width: 25%;
-    height: 34%;
+    height: 28%;
     background: wheat;
     margin-bottom: 20;
     margin-left: 5%;
@@ -71,4 +71,13 @@
 .logo_certif{
     width: 100%;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1500px){
+
+    .certification img{
+        height: 34%;
+    }
+
 }
