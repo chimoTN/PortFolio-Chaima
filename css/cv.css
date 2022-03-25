@@ -9,6 +9,13 @@
     color: black;
 }
 
+.conteneur_bouttonst{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    padding: 5%;
+}
+
 .img_f{
     width: 200;
     height: 200;

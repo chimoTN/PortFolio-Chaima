@@ -140,7 +140,7 @@
 }
 
 
-@media screen and (min-width: 1850px){
+@media screen and (min-width: 1600px){
    
     .conteneur_certif{
 		height: auto;
@@ -173,8 +173,10 @@
 }
 
 
+
 @media screen and (max-width: 1600px){
    
+
     .presentationProjet{
         height: 325px;
         width: 325px;
