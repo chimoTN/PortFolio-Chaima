@@ -57,6 +57,11 @@
 	background-size:cover;
 }
 
+#z8{
+	background-image : url('../image/gsb2.PNG');
+	background-size:cover;
+}
+
 #z4{
 	background:gray;
 	background-image : url('../image/rouage.png');
